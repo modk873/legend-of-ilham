@@ -19,10 +19,27 @@ body {
 
 @layer components {
   .btn-primary {
-    @apply px-6 py-3 bg-primary text-white rounded-lg hover:bg-opacity-90 transition-all duration-300;
+    @apply px-8 py-4 bg-primary text-white text-xl font-bold rounded-lg 
+           hover:bg-opacity-90 transition-all duration-300 
+           shadow-lg hover:shadow-xl
+           border-2 border-white border-opacity-20
+           transform hover:scale-105 active:scale-95;
   }
   
   .card {
-    @apply bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-6 shadow-lg;
+    @apply bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-6 
+           shadow-lg hover:shadow-xl transition-all duration-300
+           border border-white border-opacity-10;
+  }
+
+  .mode-card {
+    @apply card cursor-pointer transform transition-all duration-300
+           hover:scale-105 active:scale-95
+           hover:bg-opacity-20;
+  }
+
+  .mode-card.selected {
+    @apply ring-4 ring-primary ring-opacity-50
+           bg-opacity-20;
   }
 } 
