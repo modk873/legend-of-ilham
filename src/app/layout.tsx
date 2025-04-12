@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="ar" dir="rtl">
       <body className={notoSansArabic.className}>
-        <main className="min-h-screen bg-gradient-to-b from-dark to-primary">
+        <main className="min-h-screen">
           {children}
         </main>
       </body>

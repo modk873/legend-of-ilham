@@ -1,4 +1,4 @@
-import { AriaAttributes, DOMAttributes } from 'react'
+import React from 'react'
 
 declare global {
   namespace JSX {
