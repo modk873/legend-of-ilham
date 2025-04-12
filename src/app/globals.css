@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 44, 62, 80;
+  --background-end-rgb: 255, 107, 107;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+    to bottom,
+    rgb(var(--background-start-rgb)),
+    rgb(var(--background-end-rgb))
+  );
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-primary text-white rounded-lg hover:bg-opacity-90 transition-all duration-300;
+  }
+  
+  .card {
+    @apply bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-6 shadow-lg;
+  }
+} 
